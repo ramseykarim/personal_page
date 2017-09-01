@@ -1,0 +1,139 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+header {
+	padding: 10px 0;
+}
+
+header .row,
+footer .row {
+	display: flex;
+	align-items: center;
+}
+
+header h1 {
+	font-weight: 700;
+	margin: 0;
+}
+
+header nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+a.toplinks {
+	color: #000;
+	text-decoration: none;
+	font-family: Verdana, Geneva, sans-serif;
+	text-shadow: 1px 1px #fff;
+	-o-transition: .25s;
+	-ms-transition: .25s;
+	-webkit-transition: .25s;
+	transition: .25s;
+}
+
+a.toplinks:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+header p {
+	padding: 0 20px;
+	margin: 0;
+}
+
+.jumbotron {
+	display: flex;
+	align-items: center;
+	background-image: url("Figures/ramphoto1.jpg");
+	background-size: cover;
+	color: #000000;
+	height: 500px;
+	text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+	font-size: 60px;
+	font-weight: 700;
+	padding-left: 10px;
+	margin: 0;
+	color: #fff;
+	text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron p {
+	margin: 0 0 20px;
+	color: #fff;
+}
+
+#bodyblock {
+	background-color: #000000;
+	max-height: 500px;
+	opacity: 0;
+	border-radius: 10px;
+	padding: 10px 20px 10px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+#jtron:hover #bodyblock, #jtron:active #bodyblock {
+	opacity: .9;
+	border-radius: 10px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 0px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #0077B5;
+    color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #FFFC00;
+    color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
