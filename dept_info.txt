@@ -1,3 +1,1 @@
- Ramsey Karim is a first year graduate student at UMD. His interests
- include radio astronomy and observation techniques as well as various
- astronomical applications of computer science.
+ Ramsey Karim is a fourth year graduate student at UMD, working with adviser Prof. Lee Mundy. His interests include radio/IR observation and analysis as well as astronomical applications of computer science. He did his Master's work with Prof. Mundy on constraining hydrogen mass present in star-forming molecular clouds. Now a PhD student, he currently works with Xander Tielens, Marc Pound, and Mark Wolfire on obtaining kinematic and energetic information from SOFIA [CII] observations of PDRs.

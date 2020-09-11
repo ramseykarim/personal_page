@@ -46,11 +46,11 @@ header p {
 
 .jumbotron {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	background-image: url("Figures/ramphoto1.jpg");
 	background-size: cover;
 	color: #000000;
-	height: 500px;
+	height: 800px;
 	text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
@@ -83,6 +83,26 @@ header p {
 #jtron:hover #bodyblock, #jtron:active #bodyblock {
 	opacity: .9;
 	border-radius: 10px;
+}
+
+#show-email-button {
+	background-color: #222222;
+	padding: 5px;
+	border-radius: 10px 10px 10px;
+	border: 1px solid #aaaaaa;
+	-o-transition: .25s;
+	-ms-transition: .25s;
+	-webkit-transition: .25s;
+	transition: .25s;
+}
+
+#show-email-button:hover {
+	background-color: #333333;
+	padding: 7px;
+}
+
+#email-line {
+	display: none;
 }
 
 footer {
