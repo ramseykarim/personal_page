@@ -25,6 +25,13 @@ header h1 {
 	margin: 0;
 }
 
+header h1 a {
+  /* Get rid of the link color */
+  color: #000;
+  /* Get rid of the link underline */
+  text-decoration: none;
+}
+
 /* Push nav buttons to the right side of the page */
 header nav {
 	display: flex;
