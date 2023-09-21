@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Ramsey's Projects">
+  	<meta name="author" content="Ramsey Karim">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- updated icon library, copied from https://cdnjs.com/libraries/font-awesome -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- My CSS; it is important for this to come after the Boostrap link so that "body" tag styles apply properly -->
+    <link rel="stylesheet" type="text/css" href="main2.css">
+    <title>Ramsey Karim: Projects</title>
+  </head>
+
+
+
+
+
+  <!-- not sure what d-flex is but min vertical height is set to 100%-->
+  <body class="d-flex flex-column min-vh-100">
+
+    <header class="container-fluid">
+  		<div class="row">
+  			<h1 class="col-sm-4 text-left"><a href="index2.html">Ramsey Karim</a></h1>
+  			<nav class="col-sm-8 text-right">
+  				<p><a class="toplinks" href="Files/resume_notice.txt" onclick="alert('Resume is not up to date!')">Resume/CV</a></p>
+          <p><a class="toplinks" href="projects.html">Software and Projects</a></p>
+  				<!-- <p><a class="toplinks" href="teaching.html">Teaching</a></p> -->
+  			</nav>
+  		</div>
+    </header>
+
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <!-- The "margin end auto (me) and "margin start/right/left auto" (ms, mr, ml) is not totally clear to me. I want to push columns apart, but the behavior of these classes is pretty erratic. This combination works for now... -->
+
+
+        <div class="centertextdiv col-md-6">
+
+
+          <!-- First, general / reusable software -->
+
+
+          <h2><a class="projlinks" href="https://github.com/ramseykarim/scoby">scoby</a></h2>
+          <p>
+            scoby is a theory interface for observers who want quick results.
+            This software links high-mass star theory to observational catalogs and delivers results suited for observers.
+            The user inputs a catalog of early-type (OB) stars with known spectral types, and the software chains together tables from stellar theory literature to associate each spectral type with a theoretical stellar spectrum and wind properties.
+            A number of cluster-wide properties can be obtained, such as total mechanical luminosity (kinetic energy from stellar winds) or a map of the far-ultraviolet flux (G<sub>0</sub>, a fundamental property for photodissociation region, or PDR, studies).
+          </p>
+
+          <p>
+            The code is developed on <a href="https://github.com/ramseykarim/scoby">GitHub</a>.
+            There are <a href="https://github.com/ramseykarim/scoby-nb/">example notebooks</a> which show how to use scoby for some useful cluster calculations.
+          </p>
+
+          <p>
+            scoby has been used in CITE, CITE, CITE.
+          </p>
+
+          <h2><a class="projlinks" href="https://github.com/ramseykarim/pacs_calibrate">pacs_calibrate</a></h2>
+          <p>
+            pacs_calibrate is a package for zero-point calibrating <a href="https://www.cosmos.esa.int/web/herschel/pacs-overview">Herschel PACS</a> photometry.
+            The software uses the <a href="https://ui.adsabs.harvard.edu/abs/2016A%26A...596A.109P/abstract">Planck GNILC</a>
+            dust model to predict what the absolute flux should be at the PACS filter wavelengths.
+          </p>
+
+          <h2><a class="projlinks" href="https://github.com/ramseykarim/mantipython">mantipython</a></h2>
+          <p>
+            mantipython is a translation of manticore, a C++ software, into Python.
+            The software creates model far-infrared observations of layered slabs of dust with a variety of properties and allows fitting of these models to observations.
+            Entire regions covered by Herschel PACS and SPIRE can be modeled with thermal dust emission.
+            The code includes error estimation and adaptive re-fitting of isolated problem pixels.
+          </p>
+
+          <p>
+            The code is developed on <a href="https://github.com/ramseykarim/pacs_calibrate">GitHub</a>.
+          </p>
+
+          <h2><a class="projlinks" href="https://github.com/ramseykarim/alpha-x">Alpha-X</a></h2>
+          <p>
+            Alpha-X is a clustering software which uses <a href="https://en.wikipedia.org/wiki/Alpha_shape">alpha shapes</a>
+            to determine concrete boundaries around sets of discrete points at some characteristic length scale.
+          </p>
+
+          <p>
+            The software is desecribed in detail in <a href="https://ui.adsabs.harvard.edu/abs/2019ASPC..523..571K/abstract">Karim et al. 2018</a>.
+            The code is available on <a href="https://github.com/ramseykarim/alpha-x">GitHub</a>.
+          </p>
+
+          <h2><a class="projlinks" href="https://github.com/chongchonghe/gravidy/tree/moregpu">gravidy</a></h2>
+          <p>
+            Beginning as a hackathon project, I am working with some colleagues to accelerate the gravidy particle-particle <a href="https://en.wikipedia.org/wiki/N-body_problem">N-body</a> code by moving computation from the CPU to the GPU using CUDA.
+            The original C++ software, described by <a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.473.3113M/abstract">Maureira-Fredes and Amaro-Seoane 2018</a>, was written with some GPU acceleration, but we identified several areas where we could move more computation to the GPU and avoid expensive data transfers between the CPU and GPU.
+          </p>
+
+          <p>
+            My work is developed on the "moregpu" branch of our fork on <a href="https://github.com/chongchonghe/gravidy/tree/moregpu">GitHub</a>.
+          </p>
+
+          <h2><a class="projlinks" href="https://github.com/hagrusa/HURRICANE">Hurricane</a></h2>
+          <p>
+            Hurricane is a <a href="https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation">Barnes-Hut</a> N-body code written in C as part of a graduate class project.
+            I was responsible for writing the recursive and tree structures for the code.
+          </p>
+
+          <p>
+            The code is available on <a href="https://github.com/hagrusa/HURRICANE">GitHub</a>.
+          </p>
+
+
+          <!-- Now, research projects (and software specific to those) -->
+
+          <h2>FEEDBACK Survey: Pillars of Creation</h2>   <!-- <a class="projlinks" href="#">FEEDBACK Survey: Pillars of Creation</a> -->
+          <p>
+            The <a href="https://feedback.astro.umd.edu/">FEEDBACK</a> SOFIA Legacy Project studies the energetic "feedback" from massive stars into their nebular birthplaces.
+            Massive stars are born in massive interstellar gas complexes, and when the stars begin emitting radiation and ejecting their outer layers as winds, they push away and evaporate the gas around them.
+            This energetic feedback is an important mode of adding kinetic and thermal energy to interstellar gas; supernovae, the explosive death of massive stars, are another mode of adding energy to the interstellar medium (ISM; the interstellar gas which fills the Milky Way and all other galaxies).
+            Stellar feedback can compress gas, which may lead to more star formation, and can also disperse clouds of gas, which can suppress star formation.
+            Understanding the particulars of stellar feedback is crucial to understanding the life cycle of interstellar gas and star formation.
+          </p>
+          <p>
+            The FEEDBACK project studies stellar feedback using the [C II] line, a far-infrared transition of ionized carbon which traces photodissociation regions (PDRs) and can only be observed from above the Earth's atmosphere (from space, balloon, airplane, etc., but not from the ground)
+            PDRs are the interface between the ionized H II region (interstellar gas ionized by starlight) and the neutral molecular gas (unperturbed gas from which stars might form) and are heated by far-ultraviolet starlight.
+            The [C II] line can be spectroscopically resolved, meaning that we can decompose the spectral line profile into one or more velocity components and see the kinematics of the region.
+          </p>
+          <p>
+            I led a project studying the Pillars of Creation in M16 using FEEDBACK project observations.
+            I used FEEDBACK [C II] observations to study the PDRs and molecular line observations to study the dense molecular gas underneath the PDRs.
+            I used the scoby software to evaluate the stellar feedback capability of the NGC 6611 cluster which powers the region.
+            I used the pacs_calibrate and mantipython softwares to calibrate and model far-infrared dust emission in order to compare dust properties to the PDR and molecular gas properties.
+          </p>
+
+          <h2>FEEDBACK Survey: The Eagle Nebula</h2>
+          <p>
+            I am leading a project to study the larger M16 region, also known as the Eagle Nebula, which contains the Pillars of Creation.
+            The FEEDBACK SOFIA [C II] observations and some of the molecular line observations cover the degree-scale field lying just above the Galactic plane.
+            I am using scoby to study the feedback capability of the NGC 6611 cluster using a more recent catalog and compare that capability to our observations of the gas.
+          </p>
+
+          <h2><a class="projlinks" href="https://ui.adsabs.harvard.edu/abs/2020AAS...23536811H/abstract">HELPSS: Herschel Enhanced Legacy Products for Star Formation Studies</a></h2>
+          <p>
+            I worked on calibrating the Herschel PACS observations for the HELPSS project, which is described by
+            <a href="https://ui.adsabs.harvard.edu/abs/2020AAS...23536811H/abstract">Huard et al. 2020</a>.
+            I built pacs_calibrate for this purpose.
+            The project involves modeling Herschel PACS and SPIRE observations, and I built mantipython to do this modeling.
+            HELPSS targeted 10+ regions around the Milky Way, so all software needed to be flexible and reusable.
+          </p>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <footer class="container-fluid mt-auto">
+		  <div class="row justify-content-start align-items-center">
+        <div class="col-sm-4">
+          <p>&#169; Ramsey Karim 2023</p>
+        </div>
+				<!-- find more icons https://fontawesome.com/icons ; fa stands for font awesome, which is the icon library -->
+        <div class="socials col-sm-4">
+    			<a href="https://www.linkedin.com/in/ramsey-karim-749726119/" class="fa-brands fa-linkedin"></a>
+    			<a href="https://github.com/ramseykarim" class="fa-brands fa-github"></a>
+    			<a href="https://orcid.org/0000-0001-8844-5618" class="fa-brands fa-orcid"></a>
+        </div>
+
+		  </div>
+		</footer>
+
+
+    <!-- Boostrap JS (did not include Popper as I'm not using its features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+</html>
